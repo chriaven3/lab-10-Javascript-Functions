@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        var imp = prompt("Enter a word to pluralize: ")
+
+        function plrize(imp) {
+
+            if (imp == "moose") {
+                var newword = "moose"
+            } else if (imp == "automation") {
+                var newword = "automata";
+            } else if (imp == "mouse") {
+                var newword = "mice";
+            } else {
+                var newword = imp.concat("s");
+            }
+            return newword;
+        }
+
+        var endresult = plrize(imp);
+        console.log(endresult);
+
+    </script>
+</body>
+
+</html>
